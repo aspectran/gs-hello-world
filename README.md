@@ -20,14 +20,3 @@ My-MacPro:app aspectran# ./run.sh
 2016-08-11 00:10:47,295 [INFO] AspectranService has been started successfully.
 Aspectran>
 ```
-
-***run.sh***
-```console
-#!/bin/sh
-echo
-echo "╔═╗╔═╗╔═╗╔═╗╔═╗╔╦╗╦═╗╔═╗╔╗╔  ╔═╗╔═╗╔╗╔╔═╗╔═╗╦  ╔═╗  ╔═╗╔═╗╦═╗╦  ╦╦╔═╗╔═╗"
-echo "╠═╣╚═╗╠═╝║╣ ║   ║ ╠╦╝╠═╣║║║  ║  ║ ║║║║╚═╗║ ║║  ║╣   ╚═╗║╣ ╠╦╝╚╗╔╝║║  ║╣ "
-echo "╩ ╩╚═╝╩  ╚═╝╚═╝ ╩ ╩╚═╩ ╩╝╚╝  ╚═╝╚═╝╝╚╝╚═╝╚═╝╩═╝╚═╝  ╚═╝╚═╝╩╚═ ╚╝ ╩╚═╝╚═╝"
-echo
-java -Dlog4j.configurationFile="file://$PWD/log4j2.xml" -cp "lib/*" com.aspectran.console.Application
-```
