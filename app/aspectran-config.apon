@@ -1,0 +1,20 @@
+context: {
+	root: "/config/hello-world-config.xml"
+	resources: [
+		"/config"
+		"/classes"
+	]
+	hybridLoad: false
+	autoReload: {
+		reloadMethod: soft
+		observationInterval: 5
+		startup: false
+	}
+	profiles: {
+	}
+}
+scheduler: {
+	startDelaySeconds: 3
+	waitOnShutdown: true
+	startup: false
+}
