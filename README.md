@@ -18,5 +18,5 @@ My-MacPro:app aspectran# ./run.sh
 2016-08-11 00:10:47,294 [INFO] TemplateProcessor has been initialized successfully.
 2016-08-11 00:10:47,295 [INFO] ActivityContext build completed in 74 ms.
 2016-08-11 00:10:47,295 [INFO] AspectranService has been started successfully.
-Aspectran>
+Aspectran> hello
 ```
