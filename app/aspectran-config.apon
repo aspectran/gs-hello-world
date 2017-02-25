@@ -2,7 +2,6 @@ context: {
 	root: /config/hello-world-config.xml
 	resources: [
 		/config
-		/classes
 	]
 	hybridLoad: false
 	autoReload: {
