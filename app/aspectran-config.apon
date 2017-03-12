@@ -1,12 +1,16 @@
 context: {
-	root: /config/hello-world-config.xml
-	resources: [
-		/config
-	]
-	hybridLoad: false
-	autoReload: {
-		reloadMode: soft
-		scanIntervalSeconds: 5
-		startup: false
-	}
+    root: /config/hello-world-config.xml
+    resources: [
+        /config
+    ]
+    hybridLoad: false
+    autoReload: {
+        reloadMode: soft
+        scanIntervalSeconds: 5
+        startup: false
+    }
+}
+console: {
+    mode: jline
+    prompt: "ga-hello-world> "
 }
