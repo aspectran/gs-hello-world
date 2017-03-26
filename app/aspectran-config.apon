@@ -13,4 +13,5 @@ context: {
 console: {
     mode: jline
     prompt: "ga-hello-world> "
+    showDescription: true
 }

@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE aspectran PUBLIC "-//ASPECTRAN//DTD Aspectran Configuration 4.0//EN"
-		"http://aspectran.github.io/dtd/aspectran-4.dtd">
+                           "http://aspectran.github.io/dtd/aspectran-4.dtd">
 
 <aspectran>
 
-	<translet name="hello">
-		<transform type="transform/text" contentType="text/plain">
-			<template>Hello, World!</template>
-		</transform>
-	</translet>
+    <description style="apon">
+        |
+        |   --- The simplest Hello World application created with Aspectran ---
+        |
+        |Built-in commands for this console application:
+        |   description on - Display a description of the command.
+        |   description off - Do not display the description of the command.
+        |   restart - Restart this console application.
+        |   quit - Exit from this console application.
+        |
+        |Commands that can run the examples:
+        |   hello - It prints the words "Hello World" to the console.
+        |
+    </description>
+
+    <translet name="hello">
+        <description style="apon">
+            |
+            |   It prints the words "Hello, World!" to the console.
+            |
+        </description>
+        <transform type="transform/text" contentType="text/plain">
+            <template style="apon">
+                |
+                |   Hello, World!
+                |
+            </template>
+        </transform>
+    </translet>
 
 </aspectran>
