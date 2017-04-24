@@ -23,7 +23,7 @@
         <description style="apon">
             |
             |   It prints the words "Hello, World!" to the console.
-            |
+            |---------------------------------------------------------
         </description>
         <transform type="transform/text" contentType="text/plain">
             <template style="apon">
