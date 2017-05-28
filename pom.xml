@@ -2,9 +2,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aspectran</groupId>
-    <artifactId>ga-hello-world</artifactId>
+    <artifactId>gs-hello-world</artifactId>
     <version>0.3.0-SNAPSHOT</version>
-    <url>https://github.com/aspectran-guides/ga-hello-world.git</url>
+    <url>https://github.com/aspectran/gs-hello-world.git</url>
     <contributors>
         <contributor>
             <name>Juho Jeong</name>
