@@ -12,6 +12,6 @@ context: {
 }
 console: {
     mode: jline
-    prompt: "ga-hello-world> "
+    prompt: "{{BLUE}}gs-hello-world{{YELLOW,bold}}>{{off}} "
     showDescription: true
 }

@@ -6,16 +6,17 @@
 
     <description style="apon">
         |
-        |   --- The simplest Hello World application created with Aspectran ---
+        |   {{bold}}--- The simplest Hello World application created with Aspectran ---{{bold:off}}
         |
-        |Built-in commands for this console application:
-        |   desc on - Display a description of the command.
-        |   desc off - Do not display the description of the command.
-        |   restart - Restart this console application.
-        |   quit - Exit from this console application.
+        |{{underline}}Built-in commands for this console application:{{underline:off}}
+        |   {{green}}desc on{{fg:off}} - Display a description of the command
+        |   {{green}}desc off{{fg:off}} - Turn off display of description for the command
+        |   {{green}}restart{{fg:off}} - Restart this console application
+        |   {{green}}help{{fg:off}} - Show the description message that was displayed at startup
+        |   {{green}}quit{{fg:off}} - Exit from this console application
         |
-        |Commands that can run the examples:
-        |   hello - It prints the words "Hello World" to the console.
+        |{{underline}}Commands that can run the examples:{{underline:off}}
+        |   {{green}}hello{{fg:off}} - It prints the words "Hello World" to the console.
         |
     </description>
 
