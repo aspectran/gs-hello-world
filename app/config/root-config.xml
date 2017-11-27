@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE aspectran PUBLIC "-//ASPECTRAN//DTD Aspectran Configuration 5.0//EN"
+                           "http://aspectran.github.io/dtd/aspectran-5.dtd">
+
+<aspectran>
+
+    <description style="apon">
+        |
+        |   {{bold}}--- The simplest Hello World application created with Aspectran ---{{bold:off}}
+        |
+        |{{underline}}Commands that can run the examples:{{underline:off}}
+        |   {{green}}hello{{fg:off}} - It prints the phrase "Hello World!" to your console.
+        |   {{green}}hello2{{fg:off}} - It prints the phrase "Hello World!" to your console with ANSI escape codes.
+        |
+    </description>
+
+    <translet name="hello">
+        <description style="apon">
+            |
+            |   The phrase "Hello, World!" will be printed on your console.
+            |-----------------------------------------------------------------
+        </description>
+        <transform type="transform/text" contentType="text/plain">
+            <template style="apon">
+                |
+                |   Hello, World!
+                |
+            </template>
+        </transform>
+    </translet>
+
+    <translet name="hello2">
+        <description style="apon">
+            |
+            |   The phrase "Hello, World!" will be printed on your console with ANSI escape codes.
+            |----------------------------------------------------------------------------------------
+        </description>
+        <transform type="transform/text" contentType="text/plain">
+            <template style="apon">
+                |
+                |   {{bg:green}}                         {{off}}
+                |   {{bg:green}}   {{magenta,bg:white}}                   {{bg:blue}}   {{off}}
+                |   {{bg:green}}   {{magenta,bg:white}}   Hello, World!   {{bg:blue}}   {{off}}
+                |   {{bg:green}}   {{magenta,bg:white}}                   {{bg:blue}}   {{off}}
+                |   {{magenta,bg:blue}}                         {{off}}
+                |
+            </template>
+        </transform>
+    </translet>
+
+</aspectran>

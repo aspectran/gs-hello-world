@@ -1,5 +1,2 @@
 @ECHO OFF
-ECHO -----------------=======================
-ECHO            ASPECTRAN CONSOLE
-ECHO =======================-----------------
-java -Dlog4j.configurationFile="file:/%CD%\log4j2.xml" -cp "lib/*" com.aspectran.console.AspectranConsole
+java -Dlogback.configurationFile="file:/%CD%\logback.xml" -cp "lib/*" com.aspectran.shell.jline.JLineAspectranShell

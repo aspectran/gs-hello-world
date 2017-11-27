@@ -1,5 +1,2 @@
 #!/bin/sh
-echo "-----------------======================="
-echo "          ASPECTRAN CONSOLE             "
-echo "=======================-----------------"
-java -Dlog4j.configurationFile="file://$PWD/log4j2.xml" -cp "lib/*" com.aspectran.console.AspectranConsole
+java -Dlogback.configurationFile="file://$PWD/logback.xml" -cp "lib/*" com.aspectran.shell.jline.JLineAspectranShell
