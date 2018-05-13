@@ -8,7 +8,7 @@
         |
         |   {{bold}}--- The simplest Hello World application created with Aspectran ---{{bold:off}}
         |
-        |{{underline}}Commands that can run the examples:{{underline:off}}
+        |{{underline}}Commands that can run examples:{{underline:off}}
         |   {{green}}hello{{fg:off}} - It prints the phrase "Hello World!" to your console.
         |   {{green}}hello2{{fg:off}} - It prints the phrase "Hello World!" to your console with ANSI escape codes.
         |
