@@ -12,6 +12,7 @@ while [ -h "$PRG" ] ; do
 done
 PRG_DIR=`dirname "$PRG"`
 BASE_DIR="$PRG_DIR/.."
+BASE_DIR="$(cd "$BASE_DIR"; pwd)"
 if [ -z "$JAVA_HOME" ]; then
     JAVA_BIN="`which java 2>/dev/null || type java 2>&1`"
     while [ -h "$JAVA_BIN" ]; do
@@ -28,10 +29,17 @@ if [ -z "$JAVA_HOME" ]; then
 else
     JAVA_BIN="$JAVA_HOME/bin/java"
 fi
+CLASSPATH="$BASE_DIR/lib/*"
+LOGGING_CONFIG="$BASE_DIR/config/logback.xml"
+ASPECTRAN_CONFIG="$BASE_DIR/config/aspectran-config.apon"
+if [ -z "$JAVA_OPTS" ]; then
+    JAVA_OPTS="-Xms256m -Xmx1024m"
+fi
 
 "$JAVA_BIN" \
-    -Dlogback.configurationFile="$BASE_DIR/config/logback.xml" \
+    ${JAVA_OPTS} \
+    -Dlogback.configurationFile="$LOGGING_CONFIG" \
     -Daspectran.baseDir="$BASE_DIR" \
-    -cp "$BASE_DIR/lib/*" \
+    -classpath "$CLASSPATH" \
     com.aspectran.shell.jline.JLineAspectranShell \
-    "$BASE_DIR/config/aspectran-config.apon"
+    "$ASPECTRAN_CONFIG"

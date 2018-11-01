@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE aspectran PUBLIC "-//ASPECTRAN//DTD Aspectran Configuration 5.0//EN"
-                           "http://aspectran.github.io/dtd/aspectran-5.dtd">
+        "http://aspectran.github.io/dtd/aspectran-5.dtd">
 
 <aspectran>
 
@@ -20,7 +20,7 @@
             |   The phrase "Hello, World!" will be printed on your console.
             |-----------------------------------------------------------------
         </description>
-        <transform type="transform/text" contentType="text/plain">
+        <transform type="transform/text">
             <template style="apon">
                 |
                 |   Hello, World!
@@ -35,7 +35,7 @@
             |   The phrase "Hello, World!" will be printed on your console with ANSI escape codes.
             |----------------------------------------------------------------------------------------
         </description>
-        <transform type="transform/text" contentType="text/plain">
+        <transform type="transform/text">
             <template style="apon">
                 |
                 |   {{bg:green}}                         {{off}}
