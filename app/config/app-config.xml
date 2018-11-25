@@ -9,8 +9,8 @@
         |   {{bold}}--- The simplest Hello World application created with Aspectran ---{{bold:off}}
         |
         |{{underline}}Commands that can run examples:{{underline:off}}
-        |   {{green}}hello{{fg:off}} - It prints the phrase "Hello World!" to your console.
-        |   {{green}}hello2{{fg:off}} - It prints the phrase "Hello World!" to your console with ANSI escape codes.
+        |   {{green}}hello{{fg:reset}} - It prints the phrase "Hello World!" to your console.
+        |   {{green}}hello2{{fg:reset}} - It prints the phrase "Hello World!" to your console with ANSI escape codes.
         |
     </description>
 
@@ -38,11 +38,11 @@
         <transform type="transform/text">
             <template style="apon">
                 |
-                |   {{bg:green}}                         {{off}}
-                |   {{bg:green}}   {{magenta,bg:white}}                   {{bg:blue}}   {{off}}
-                |   {{bg:green}}   {{RED,bg:white}}   Hello, World!   {{bg:blue}}   {{off}}
-                |   {{bg:green}}   {{magenta,bg:white}}                   {{bg:blue}}   {{off}}
-                |   {{magenta,bg:blue}}                         {{off}}
+                |   {{bg:green}}                         {{reset}}
+                |   {{bg:green}}   {{magenta,bg:white}}                   {{bg:blue}}   {{reset}}
+                |   {{bg:green}}   {{RED,bg:white}}   Hello, World!   {{bg:blue}}   {{reset}}
+                |   {{bg:green}}   {{magenta,bg:white}}                   {{bg:blue}}   {{reset}}
+                |   {{magenta,bg:blue}}                         {{reset}}
                 |
             </template>
         </transform>
