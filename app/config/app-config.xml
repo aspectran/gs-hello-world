@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE aspectran PUBLIC "-//ASPECTRAN//DTD Aspectran Configuration 5.0//EN"
-        "http://aspectran.github.io/dtd/aspectran-5.dtd">
+<!DOCTYPE aspectran PUBLIC "-//ASPECTRAN//DTD Aspectran Configuration 6.0//EN"
+        "http://aspectran.github.io/dtd/aspectran-6.dtd">
 
 <aspectran>
 
@@ -9,16 +9,15 @@
         |   {{bold}}--- The simplest Hello World application created with Aspectran ---{{bold:off}}
         |
         |{{underline}}Commands that can run examples:{{underline:off}}
-        |   {{green}}hello{{fg:reset}} - It prints the phrase "Hello World!" to your console.
-        |   {{green}}hello2{{fg:reset}} - It prints the phrase "Hello World!" to your console with ANSI escape codes.
+        |   {{green}}hello{{fg:reset}} - "Hello, World!" will be printed on your console.
+        |   {{green}}hello2{{fg:reset}} - "Hello, World!" with ANSI escape codes will be printed on your console.
         |
     </description>
 
     <translet name="hello">
         <description style="apon">
             |
-            |   The phrase "Hello, World!" will be printed on your console.
-            |-----------------------------------------------------------------
+            |   "Hello, World!" will be printed on your console.
         </description>
         <transform type="transform/text">
             <template style="apon">
@@ -32,8 +31,8 @@
     <translet name="hello2">
         <description style="apon">
             |
-            |   The phrase "Hello, World!" will be printed on your console with ANSI escape codes.
-            |----------------------------------------------------------------------------------------
+            |   "Hello, World!" with ANSI escape codes will be printed
+            |   on your console.
         </description>
         <transform type="transform/text">
             <template style="apon">
