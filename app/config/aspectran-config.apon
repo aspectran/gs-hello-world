@@ -47,12 +47,12 @@ shell: {
         com.aspectran.shell.command.builtins.PBEncryptCommand
         com.aspectran.shell.command.builtins.PBDecryptCommand
         com.aspectran.shell.command.builtins.SysInfoCommand
-        com.aspectran.shell.command.builtins.HelpCommand
-        com.aspectran.shell.command.builtins.VerboseCommand
-        com.aspectran.shell.command.builtins.RestartCommand
-        com.aspectran.shell.command.builtins.PauseCommand
-        com.aspectran.shell.command.builtins.ResumeCommand
+        com.aspectran.shell.command.builtins.EchoCommand
+        com.aspectran.shell.command.builtins.HistoryCommand
         com.aspectran.shell.command.builtins.ClearCommand
+        com.aspectran.shell.command.builtins.VerboseCommand
+        com.aspectran.shell.command.builtins.HelpCommand
+        com.aspectran.shell.command.builtins.RestartCommand
         com.aspectran.shell.command.builtins.QuitCommand
     ]
     greetings: (
@@ -71,6 +71,8 @@ shell: {
         |If you want a list of all available translets, type '{{GREEN}}translet -l{{reset}}'.
         |To run a translet, type '{{GREEN}}translet <translet_name>{{reset}}' or '{{GREEN}}translet_name{{reset}}'.
     )
+    workingDir: /work
+    historyFile: /logs/history.log
     verbose: true
     exposals: {
         -: /**
