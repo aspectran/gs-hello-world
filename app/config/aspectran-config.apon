@@ -1,9 +1,12 @@
 context: {
     root: /config/app-config.xml
     resources: [
-        /lib
         /config
     ]
+    scan: [
+    ]
+    profiles: {
+    }
     hybridLoad: false
     autoReload: {
         reloadMode: soft
