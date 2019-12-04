@@ -52,6 +52,9 @@ shell: {
         com.aspectran.shell.command.builtins.RestartCommand
         com.aspectran.shell.command.builtins.QuitCommand
     ]
+    session: {
+        startup: false
+    }
     workingDir: /work
     historyFile: /logs/history.log
     verbose: true
@@ -75,6 +78,9 @@ daemon: {
         com.aspectran.daemon.command.builtins.RestartCommand
         com.aspectran.daemon.command.builtins.QuitCommand
     ]
+    session: {
+        startup: false
+    }
     exposals: {
         -: /**
     }
