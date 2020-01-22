@@ -10,7 +10,5 @@ if [ ! -d "$REPO_DIR" ]; then
   cd "$REPO_DIR" || exit
 else
   cd "$REPO_DIR" || exit
-  # git fetch --all
-  # git reset --hard origin/master
   git pull origin master
 fi
