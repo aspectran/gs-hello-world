@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-source app.conf
+. app.conf
 
 echo "Deploying to $DEPLOY_DIR ..."
 
@@ -25,10 +25,10 @@ rm -rf "${DEPLOY_DIR:?}"/config/*
 rm -rf "${DEPLOY_DIR:?}"/lib/*
 [ -d "$REPO_DIR/app/webapps" ] && rm -rf "${DEPLOY_DIR:?}"/webapps/*
 
-[ -d "$REPO_DIR/app/bin" ] && cp -pR "$REPO_DIR"/app/bin/* "$DEPLOY_DIR/bin" || exit
-[ -d "$REPO_DIR/app/commands/sample" ] && cp -pR "$REPO_DIR"/app/commands/sample/* "$DEPLOY_DIR/commands/sample" || exit
-[ -d "$REPO_DIR/app/config" ] && cp -pR "$REPO_DIR"/app/config/* "$DEPLOY_DIR/config" || exit
-[ -d "$REPO_DIR/app/lib" ] && cp -pR "$REPO_DIR"/app/lib/* "$DEPLOY_DIR/lib" || exit
-[ -d "$REPO_DIR/app/webapps" ] && cp -pR "$REPO_DIR"/app/webapps/* "$DEPLOY_DIR/webapps" || exit
+[ -d "$REPO_DIR/app/bin" ] && cp -pR "$REPO_DIR"/app/bin/* "$DEPLOY_DIR/bin"
+[ -d "$REPO_DIR/app/commands/sample" ] && cp -pR "$REPO_DIR"/app/commands/sample/* "$DEPLOY_DIR/commands/sample"
+[ -d "$REPO_DIR/app/config" ] && cp -pR "$REPO_DIR"/app/config/* "$DEPLOY_DIR/config"
+[ -d "$REPO_DIR/app/lib" ] && cp -pR "$REPO_DIR"/app/lib/* "$DEPLOY_DIR/lib"
+[ -d "$REPO_DIR/app/webapps" ] && cp -pR "$REPO_DIR"/app/webapps/* "$DEPLOY_DIR/webapps"
 
 echo "Deployment complete!"
