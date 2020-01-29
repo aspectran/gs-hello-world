@@ -9,5 +9,3 @@ if [ -d "$REPO_DIR/app/webapps" ]; then
   rm -rf "${DEPLOY_DIR:?}"/webapps/*
   cp -pR "$REPO_DIR"/app/webapps/* "$DEPLOY_DIR/webapps"
 fi
-
-echo "Deployment complete!"
