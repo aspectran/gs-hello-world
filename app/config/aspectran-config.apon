@@ -9,14 +9,14 @@ context: {
     }
     autoReload: {
         scanIntervalSeconds: 5
-        startup: false
+        enabled: false
     }
     singleton: false
 }
 scheduler: {
     startDelaySeconds: 3
     waitOnShutdown: true
-    startup: false
+    enabled: false
 }
 shell: {
     greetings: (
@@ -52,7 +52,7 @@ shell: {
         com.aspectran.shell.command.builtins.QuitCommand
     ]
     session: {
-        startup: false
+        enabled: false
     }
     workingDir: /work
     historyFile: /logs/history.log
@@ -78,7 +78,7 @@ daemon: {
         com.aspectran.daemon.command.builtins.QuitCommand
     ]
     session: {
-        startup: false
+        enabled: false
     }
     exposals: {
         -: /**
