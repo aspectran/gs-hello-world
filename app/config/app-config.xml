@@ -18,7 +18,7 @@
             |
             |   "Hello, World!" will be printed on your console.
         </description>
-        <transform type="text">
+        <transform format="text">
             <template style="apon">
                 |
                 |   Hello, World!
@@ -33,7 +33,7 @@
             |   "Hello, World!" with ANSI escape codes will be printed
             |   on your console.
         </description>
-        <transform type="text">
+        <transform format="text">
             <template style="apon">
                 |
                 |   {{bg:green}}                         {{reset}}
@@ -50,7 +50,7 @@
         <description style="apon">
             |{{bg:magenta,fg:white}} Prints the contents of the resource "sample_resource.txt"                   {{reset}}
         </description>
-        <transform type="text">
+        <transform format="text">
             <template resource="sample_resource.txt"/>
         </transform>
     </translet>
