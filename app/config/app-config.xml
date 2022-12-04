@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE aspectran PUBLIC "-//ASPECTRAN//DTD Aspectran Configuration 6.0//EN"
-        "http://aspectran.github.io/dtd/aspectran-6.dtd">
+<!DOCTYPE aspectran PUBLIC "-//ASPECTRAN//DTD Aspectran Configuration 7.0//EN"
+        "http://aspectran.github.io/dtd/aspectran-7.dtd">
 <aspectran>
 
     <description style="apon">
@@ -9,7 +9,7 @@
         |
         |Commands that can run examples:
         |   {{green}}hello{{fg:reset}} - "Hello, World!" will be printed on your console.
-        |   {{green}}hello2{{fg:reset}} - "Hello, World!" with ANSI escape codes will be printed on your console.
+        |   {{green}}hello2{{fg:reset}} - "Hello world!" with ANSI escape codes printed on your console.
         |
     </description>
 
@@ -30,8 +30,7 @@
     <translet name="hello2">
         <description style="apon">
             |
-            |   "Hello, World!" with ANSI escape codes will be printed
-            |   on your console.
+            |   "Hello world!" with ANSI escape codes printed on your console.
         </description>
         <transform format="text">
             <template style="apon">
