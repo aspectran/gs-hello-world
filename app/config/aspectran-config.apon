@@ -1,5 +1,5 @@
 context: {
-    root: /config/app-config.xml
+    root: /config/app-context.xml
     resources: [
         /config
     ]
