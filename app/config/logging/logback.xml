@@ -3,4 +3,6 @@
 
     <include file="${aspectran.basePath}/config/logging/logback-default.xml"/>
 
+    <logger name="app.hello" level="info"/>
+
 </configuration>

@@ -61,7 +61,6 @@
                     <debug>true</debug>
                     <fork>true</fork>
                     <parameters>true</parameters>
-                    <optimize>true</optimize>
                     <showDeprecation>true</showDeprecation>
                     <showWarnings>true</showWarnings>
                     <meminitial>256m</meminitial>
@@ -80,7 +79,7 @@
             </plugin>
             <plugin>
                 <artifactId>maven-dependency-plugin</artifactId>
-                <version>3.5.0</version>
+                <version>3.6.0</version>
                 <executions>
                     <execution>
                         <id>copy-dependencies</id>
