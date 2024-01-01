@@ -21,6 +21,7 @@
     <artifactId>gs-hello-world</artifactId>
     <version>1.0.0</version>
     <url>https://github.com/aspectran/gs-hello-world.git</url>
+    <inceptionYear>2016</inceptionYear>
     <contributors>
         <contributor>
             <name>Juho Jeong</name>
@@ -32,7 +33,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <aspectran.version>7.3.0</aspectran.version>
+        <aspectran.version>7.5.0-SNAPSHOT</aspectran.version>
     </properties>
     <repositories>
         <repository>
@@ -163,4 +164,46 @@
             <scope>runtime</scope>
         </dependency>
     </dependencies>
+    <profiles>
+        <profile>
+            <id>license</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>com.mycila</groupId>
+                        <artifactId>license-maven-plugin</artifactId>
+                        <version>4.3</version>
+                        <executions>
+                            <execution>
+                                <phase>compile</phase>
+                                <goals>
+                                    <goal>format</goal>
+                                </goals>
+                                <configuration>
+                                    <aggregate>true</aggregate>
+                                    <failIfMissing>true</failIfMissing>
+                                    <failIfUnknown>true</failIfUnknown>
+                                    <strictCheck>true</strictCheck>
+                                    <mapping>
+                                        <java>SLASHSTAR_STYLE</java>
+                                    </mapping>
+                                    <properties>
+                                        <copyright-range>${project.inceptionYear}-2024</copyright-range>
+                                    </properties>
+                                    <licenseSets>
+                                        <licenseSet>
+                                            <header>header.txt</header>
+                                            <includes>
+                                                <include>**/*.java</include>
+                                            </includes>
+                                        </licenseSet>
+                                    </licenseSets>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>

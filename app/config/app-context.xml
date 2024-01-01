@@ -8,8 +8,8 @@
         |   {{bold}}--- Aspectran Hello World Example ---{{bold:off}}
         |
         |Commands that can run examples:
-        |   {{green}}hello{{fg:reset}} - "Hello, World!" will be printed on your console.
-        |   {{green}}hello2{{fg:reset}} - "Hello world!" with ANSI escape codes printed on your console.
+        |   {{green}}hello{{reset}} - "Hello, World!" will be printed on your console.
+        |   {{green}}hello2{{reset}} - "Hello world!" with ANSI escape codes printed on your console.
         |
     </description>
 
