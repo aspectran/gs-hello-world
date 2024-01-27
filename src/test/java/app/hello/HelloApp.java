@@ -23,9 +23,6 @@ import java.io.IOException;
 
 import static com.aspectran.core.context.config.AspectranConfig.BASE_PATH_PROPERTY_NAME;
 
-/**
- * Test for Demo App.
- */
 public class HelloApp {
 
     public static void main(String[] args) {
