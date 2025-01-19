@@ -20,7 +20,7 @@
 
     <groupId>com.aspectran</groupId>
     <artifactId>gs-hello-world</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
 
     <name>Aspectran Hello World Example</name>
     <url>https://github.com/aspectran/gs-hello-world.git</url>
