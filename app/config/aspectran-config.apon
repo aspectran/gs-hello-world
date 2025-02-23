@@ -7,6 +7,9 @@ context: {
         app.hello
     ]
     profiles: {
+        default: [
+            dev
+        ]
     }
     autoReload: {
         scanIntervalSeconds: 5
