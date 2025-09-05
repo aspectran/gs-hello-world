@@ -26,13 +26,13 @@ scheduler: {
 shell: {
     greetings: (
         |
-        |{{YELLOW}}     ___                         __
-        |{{YELLOW}}    /   |  ___  ____  ___  ___  / /____   ___  ____
-        |{{GREEN  }}   / /| | / __|/ __ |/ _ |/ __|/ __/ __|/ __ |/ __ |
-        |{{GREEN  }}  / ___ |(__  ) /_/ /  __/ /  / / / /  / /_/ / / / /
-        |{{CYAN   }} /_/  |_|____/ .___/|___/|___/|__/_/   |__(_(_/ /_/   Shell
-        |{{CYAN   }}=========== /_/ =============================================
-        |{{MAGENTA}}:: Built with Aspectran :: #{class:com.aspectran.core.AboutMe^version}
+        |{{WHITE,bold}}     ___                         __
+        |{{CYAN      }}    /   |  ___  ____  ___  ___  / /____   ___  ____
+        |{{GREEN     }}   / /| | / __|/ __ |/ _ |/ __|/ __/ __|/ __ |/ __ |
+        |{{YELLOW    }}  / ___ |(__  ) /_/ /  __/ /  / / / /  / /_/ / / / /
+        |{{RED       }} /_/  |_|____/ .___/|___/|___/|__/_/   |__(_(_/ /_/   {{WHITE,bold}}DEMO
+        |{{gray      }}=========== /_/ ====================================================
+        |{{MAGENTA   }}:: Built with Aspectran :: {{reset}}#{class:com.aspectran.core.AboutMe^version}
         |{{reset  }}
         |If you want a list of all supported built-in commands, type '{{GREEN}}help{{reset}}'.
         |To get help on a specific command, type '{{GREEN}}command_name -h{{reset}}'.
