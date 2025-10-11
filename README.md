@@ -11,7 +11,7 @@ This project is a minimal, runnable application that showcases the core concepts
 ## Requirements
 
 - Java 21 or later
-- Maven 3.6.3 or later
+- Maven 3.9.4 or later
 
 ## How to Run
 
